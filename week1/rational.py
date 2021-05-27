@@ -8,9 +8,9 @@ class Rational:
         self.numerator = numerator
         self.denominator = denominator
 
-    def equals(self, o: object) -> bool:
-        if (isinstance(o, Rational)):
-            return (self.denominator == o.denominator) and (self.numerator == o.numerator)
+    def equals(self, other: object) -> bool:
+        if (isinstance(other, Rational)):
+            return (self.denominator == other.denominator) and (self.numerator == other.numerator)
         return False
 
 def main():
